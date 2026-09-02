@@ -1,0 +1,22 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+
+    "posts": {
+      ".indexOn": ["status", "category", "division", "district", "upazila", "union", "createdAt", "upvotes", "viewCount", "hashedId", "outcome", "amount"]
+    },
+
+    "comments": {
+      ".indexOn": ["postId", "status", "createdAt", "upvotes"]
+    },
+
+    "admins": {
+      ".indexOn": ["username", "role", "createdAt"]
+    },
+
+    "contactMessages": {
+      ".indexOn": ["isRead", "createdAt"]
+    }
+  }
+}

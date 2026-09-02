@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects for the SPA.
+#
+# The app is a single-page app rendered at /, with all view switching
+# handled by client-side state. Direct requests to non-existent paths
+# should fall back to the root HTML so a hard refresh (or shared deep
+# link) does not produce a 404.
+/*    /index.html    200
